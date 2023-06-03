@@ -31,7 +31,6 @@ img {
   max-width: 100%;
 }
 .visually-hidden {
-  position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -49,53 +48,51 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 4px solid crimson;
 }
 .head-container {
-  position: absolute;
+  display: flex;
   width: 1440px;
   left: 0px;
   border-bottom: 1px solid #e7e9fc;
-  padding-bottom: 23px;
-  padding-top: 25px;
+  padding-bottom: 24px;
+  padding-top: 24px;
 }
 .nav {
   display: flex;
+}
+.nav-menu {
+  display: flex;
+  flex-grow: 1;
 }
 .nav-list {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 40px;
-  position: absolute;
   width: 261px;
-  left: 350px;
+  margin-left: auto;
+}
+.link-head {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: var(--btn-color);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 115px;
+  display: inline-block;
+  margin-right: 76px;
+  margin-left: 156px;
 }
 .contact {
   font-style: normal;
+  margin-left: auto;
 }
 .contact-list {
   display: flex;
 }
 
-.button-portfolio {
-  cursor: pointer;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  color: var(--btn-color);
-  background-color: var(--second-color);
-}
-.button-portfolio:hover {
-  color: var(--primary-color);
-  background-color: var(--active-color);
-}
-.button-portfolio:focus {
-  color: var(--primary-color);
-  background-color: var(--active-color);
-}
 .logo {
   color: var(--color-dark);
 }
@@ -116,19 +113,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-dark);
 }
-.link-head {
-  font-family: "Raleway", sans-serif;
-  font-weight: 800;
-  color: var(--btn-color);
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  position: absolute;
-  width: 115px;
-  left: 156px;
-  display: inline-block;
-}
+
 .link {
   text-decoration: none;
 }
@@ -137,7 +122,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  position: absolute;
   width: 153px;
   height: 24px;
   left: 940px;
@@ -147,10 +131,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--text-color);
-  position: absolute;
   width: 151px;
   height: 24px;
   left: 1133px;
+  margin-right: 156px;
+  margin-left: 40px;
 }
 .link-contact:hover {
   color: var(--active-color);
@@ -160,14 +145,13 @@ img {
 }
 .section-main {
   background-color: var(--color-dark);
-  position: absolute;
   width: 1440px;
-  height: 600px;
   left: 0px;
-  top: 72px;
+  margin-top: 0;
 }
 .main-container {
-  padding: 188px 472px 292px 472px;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .title-main {
   font-weight: 700;
@@ -176,9 +160,9 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--primary-color);
-  position: absolute;
   max-width: 496px;
-  padding: 188px 472px 292px 472px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .button {
   cursor: pointer;
@@ -189,13 +173,14 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--primary-color);
-  position: absolute;
-  left: 636px;
-  margin-top: 356px;
-  margin-bottom: 188px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   padding: 16px 32px;
+  margin-top: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  /* margin-bottom: 188px; */
 }
 
 .button:hover {
@@ -220,13 +205,9 @@ img {
 }
 .text-section {
   margin-top: 120px;
-  margin-bottom: 112px;
-  position: absolute;
+  margin-left: 156px;
   width: 1128px;
-  left: 156px;
-  top: 792px;
   display: flex;
-  /* flex-direction: column; */
   align-items: flex-start;
   gap: 8px;
 }
@@ -239,7 +220,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--color-dark);
-  text-align: center;
   padding-top: 32px;
 }
 .title-two {
@@ -254,12 +234,11 @@ img {
 }
 
 .img-section {
-  /* margin-top: 120px; */
-  margin-bottom: 60px;
-  position: absolute;
+  margin-top: 120px;
   width: 1128px;
   left: 156px;
   top: 1016px;
+  margin-left: 156px;
 }
 .img-list {
   display: flex;
@@ -269,8 +248,7 @@ img {
   flex-basis: calc((100% - 24px) / 2);
 }
 .team-section {
-  margin-bottom: 0;
-  position: absolute;
+  margin-top: 120px;
   width: 1440px;
   top: 1548px;
   background-color: var(--second-color);
@@ -289,6 +267,16 @@ img {
   color: var(--color-dark);
   /* margin-top: 120px; */
   margin-bottom: 72px;
+  padding-top: 120px;
+}
+.team-three {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--color-dark);
+  padding-top: 32px;
+  text-align: center;
 }
 .team-item-img {
   flex-basis: calc((100% - 24px) / 3);
@@ -318,8 +306,6 @@ img {
 
 .footer {
   background-color: var(--color-dark);
-  /* margin-top: 120px; */
-  position: absolute;
   width: 1440px;
   left: 0px;
   top: 2280px;
@@ -346,34 +332,61 @@ img {
   height: 72px;
 }
 .footer-position {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .section {
-  margin-top: 96px;
   margin-bottom: 120px;
+  max-width: 1128px;
+  margin-left: 156px;
 }
+
 .btn-list {
   display: flex;
   gap: 24px;
   flex-direction: row;
-  padding-bottom: 72px;
-  padding-top: 96px;
+  flex-basis: calc((100% - 24px) / 4);
+  margin-top: 96px;
+  margin-bottom: 72px;
+  margin-left: 271px;
 }
 
 .btn-item {
-  flex-basis: calc((100% - 24px) / 4);
+}
+.button-portfolio {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--btn-color);
+  background-color: var(--second-color);
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  padding: 12px 24px 12px 24px;
+  box-sizing: border-box;
+}
+.button-portfolio:hover {
+  color: var(--primary-color);
+  background-color: var(--active-color);
+}
+.button-portfolio:focus {
+  color: var(--primary-color);
+  background-color: var(--active-color);
 }
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px 24px;
   margin-top: 72px;
+  box-sizing: border-box;
 }
 .title-card {
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 16px;
   text-align: none;
 }
 .title {
@@ -384,4 +397,9 @@ img {
   color: var(--color-dark);
 }
 .portfolio-item {
+  width: 360px;
+  border: 1px solid #e7e9fc;
+  box-sizing: border-box;
+}
+.portfolio-container {
 }
