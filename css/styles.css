@@ -43,43 +43,42 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
 .header {
   border-bottom: 1px solid #e7e9fc;
 }
 .container {
   width: 100%;
   max-width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
   margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .head-container {
   display: flex;
-  width: 1440px;
-  left: 0px;
-  /* border-bottom: 1px solid #e7e9fc; */
-  padding-bottom: 24px;
-  padding-top: 24px;
+  align-items: center;
+  flex-grow: 1;
 }
 .nav {
   display: flex;
   align-items: center;
-}
-.nav-menu {
-  /* display: flex;
   flex-grow: 1;
-  gap: 40px; */
 }
 .nav-list {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   gap: 40px;
-  width: 261px;
   margin-left: auto;
 }
 .nav-item {
-  /* padding: 24px 0; */
+  padding: 24px 0;
 }
 .link-head {
   font-family: "Raleway", sans-serif;
@@ -89,19 +88,24 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 115px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   margin-right: 76px;
-  margin-left: 156px;
-  padding: 24px 0;
+}
+.logo {
+  color: var(--color-dark);
+  display: flex;
+  align-items: center;
+  margin-right: 76px;
 }
 .contact {
   font-style: normal;
-  margin-left: auto;
+  display: block;
 }
 .contact-list {
   display: flex;
   gap: 40px;
+  margin-left: auto;
 }
 
 .logo {
@@ -126,9 +130,6 @@ img {
   padding: 24px 0;
 }
 
-.link {
-  text-decoration: none;
-}
 .link-contact {
   font-size: 16px;
   line-height: 1.5;
@@ -201,6 +202,15 @@ img {
 .button:focus {
   background-color: var(--active-color);
 }
+.text-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  margin-left: 156px;
+  width: 1128px;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
 .text {
   font-size: 16px;
   line-height: 1.5;
@@ -224,9 +234,7 @@ img {
   align-items: flex-start;
   gap: 8px;
 }
-.list {
-  list-style: none;
-}
+
 .title-three {
   font-weight: 500;
   font-size: 20px;
@@ -263,7 +271,7 @@ img {
   flex-basis: calc((100% - 24px) / 2);
 }
 .team-section {
-  padding: 120px 0;
+  padding-top: 120px;
   width: 1440px;
   background-color: var(--second-color);
 }
