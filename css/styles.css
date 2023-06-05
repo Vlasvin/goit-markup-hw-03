@@ -359,8 +359,8 @@ img {
   height: 72px;
 }
 .section {
-  max-width: 1440px;
-  padding-top: 96px;
+  /* max-width: 1440px; */
+  /* padding-top: 96px; */
   padding-bottom: 120px;
 }
 .portfolio-section {
