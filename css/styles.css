@@ -377,6 +377,9 @@ img {
   flex-basis: calc((100% - 24px) / 4);
   margin-bottom: 72px;
   margin-left: 271px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-item {
