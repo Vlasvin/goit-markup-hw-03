@@ -64,6 +64,7 @@ img {
 .nav-menu {
   display: flex;
   flex-grow: 1;
+  gap: 40px;
 }
 .nav-list {
   display: flex;
@@ -391,7 +392,8 @@ img {
 .portfolio-img {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  column-gap: 24px;
+  row-gap: 48px;
   margin-top: 72px;
   box-sizing: border-box;
 }
