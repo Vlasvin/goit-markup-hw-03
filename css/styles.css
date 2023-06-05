@@ -159,8 +159,7 @@ img {
   background-color: var(--color-dark);
   width: 1440px;
   left: 0px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
 }
 
 .title-main {
