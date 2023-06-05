@@ -100,12 +100,12 @@ img {
 }
 .contact {
   font-style: normal;
-  display: block;
+  /* display: block; */
+  margin-left: auto;
 }
 .contact-list {
   display: flex;
   gap: 40px;
-  margin-left: auto;
 }
 
 .logo {
@@ -145,9 +145,9 @@ img {
   color: var(--text-color);
   width: 151px;
   padding: 24px 0;
-  left: 1133px;
-  margin-right: 156px;
-  margin-left: 40px;
+  /* left: 1133px; */
+  /* margin-right: 156px; */
+  /* margin-left: 40px; */
 }
 .link-contact:hover {
   color: var(--active-color);
@@ -272,6 +272,7 @@ img {
 }
 .team-section {
   padding-top: 120px;
+  padding-bottom: 120px;
   width: 1440px;
   background-color: var(--second-color);
 }
@@ -376,7 +377,6 @@ img {
   flex-basis: calc((100% - 24px) / 4);
   margin-bottom: 72px;
   margin-left: 271px;
-  justify-content: center;
 }
 
 .btn-item {
