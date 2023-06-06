@@ -151,11 +151,11 @@ img {
 .link-contact:focus {
   color: var(--active-color);
 }
+
 .section-main {
   background-color: var(--color-dark);
   padding: 188px 0;
 }
-
 .title-main {
   font-weight: 700;
   font-size: 56px;
@@ -187,13 +187,13 @@ img {
   height: 56px;
   border: none;
 }
-
 .button:hover {
   background-color: var(--active-color);
 }
 .button:focus {
   background-color: var(--active-color);
 }
+
 .text-section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -226,7 +226,6 @@ img {
   align-items: flex-start;
   gap: 8px;
 }
-
 .title-three {
   font-weight: 500;
   font-size: 20px;
@@ -243,8 +242,6 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--color-dark);
-  /* padding-bottom: 72px; */
-
   margin-bottom: 72px;
 }
 
@@ -262,9 +259,10 @@ img {
 .im-item {
   flex-basis: calc((100% - 24px) / 2);
 }
+
 .team-section {
   padding-top: 120px;
-  /* padding-bottom: 120px; */
+  padding-bottom: 120px;
   width: 1440px;
   background-color: var(--second-color);
 }
@@ -308,7 +306,6 @@ img {
   padding-bottom: 32px;
   text-align: center;
 }
-
 .team {
   background-color: var(--second-color);
 }
@@ -350,6 +347,7 @@ img {
   width: 264px;
   height: 72px;
 }
+
 .portfolio-section {
   padding-bottom: 120px;
   max-width: 1128px;
