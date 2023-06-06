@@ -264,7 +264,7 @@ img {
 }
 .team-section {
   padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-bottom: 120px; */
   width: 1440px;
   background-color: var(--second-color);
 }
@@ -349,9 +349,6 @@ img {
   padding-top: 16px;
   width: 264px;
   height: 72px;
-}
-.section {
-  padding-bottom: 120px;
 }
 .portfolio-section {
   padding-bottom: 120px;
